@@ -53,5 +53,19 @@ Recognize character streams are called tokenizers or lexers.At the character lev
 *translates a grammar to recursive-descent recognizer that matches phrases and sentences in the language specified by the grammar*, it identifies the core control-flow framework for any recursive-descent lexer,parser.
 
 #### Discussion
+grammars are a very concise way to express the languages.  grammars are excellent documentation that can go into a reference manual and into parsing code as comments. 
+this pattern gives us a way to build recognizers directly from grammars. this pattern works for many but not all(e.g. left recursion)
 
+#### Implementation
 
+### **Pattern 2: LL(1) Recursive-Descent Lexer**
+
+#### Purpose
+Lexers derive a stream of tokens from a character stream by recognizing lexical patterns. it also called scanners, lexical analyzers, and tokenizers.
+
+#### Discussion
+
+### **Pattern 3: LL(1) Recursive-Descent Parser**
+
+#### Purpose
+This pattern analyzes the syntactic structure of the token sequence of a phrase using a single lookahead token. It’s the core mechanism of all subsequent parsing patterns.
